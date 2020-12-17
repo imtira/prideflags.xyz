@@ -1,0 +1,9 @@
+name  = "Rainbow flag"
+image = "rainbow.png"
+emoji = "🏳️‍🌈"
+tags = ["sexuality", "lgbt", "common", "gay"]
+description = '''
+The modern rainbow pride flag was originally conceived as a gay pride flag by activist
+Gilbert Baker in the late 1970s. From 1978 to 1979, the flag underwent three major
+revisions until reaching its ubiquitous form.
+'''

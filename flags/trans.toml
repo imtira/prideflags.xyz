@@ -1,0 +1,7 @@
+name = "Trans flag"
+image = "trans.png"
+emoji = "🏳️‍⚧️"
+tags = ["gender", "lgbt", "common", "trans"]
+description = '''
+something interesting about the trans flag wow cool
+'''

@@ -1,0 +1,14 @@
+.is-mobile .flag {
+  width: auto;
+  height: auto;
+}
+
+.flag {
+  height: 175px;
+  width: auto;
+}
+
+.flag-name {
+  border-width: 2px;
+  border-color: black;
+}

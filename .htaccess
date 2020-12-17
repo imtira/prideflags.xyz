@@ -1,0 +1,9 @@
+RewriteEngine on
+
+# If the request is not to a valid file
+RewriteCond %{SCRIPT_FILENAME} !-f
+# ... Or to a valid directory
+RewriteCond %{SCRIPT_FILENAME} !-d
+# Then redirect requests to subfolders to index.php with the directory as a parameter.
+# I.e. prideflags.xyz/trans => prideflags.xyz/?flag=trans
+RewriteRule ^([^/]+)/?$ index.php?flag=$1 [QSA,L]
