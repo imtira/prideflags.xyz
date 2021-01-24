@@ -1,8 +1,13 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
+use Yosymfony\Toml\Toml;
 
-// Sometimes redundant, but for code sanitisation. Only parameters passed through this function
-// should be used in the template.
+$flags = array_map(function($f) {
+  $data = Toml::ParseFile($_SERVER['DOCUMENT_ROOT']."/flags/$f");
+  $data['url'] = basename($f, '.toml');
+  return $data;
+}, array_slice(scandir($_SERVER['DOCUMENT_ROOT'].'/flags/'), 2));
+
 function build_header() {
   include($_SERVER['DOCUMENT_ROOT'].'/templates/header.php');
 }
